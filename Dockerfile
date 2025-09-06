@@ -17,7 +17,7 @@ WORKDIR /app
 
 # Copy your chatflow JSON into Flowise default folder
 RUN mkdir -p /root/.flowise/chatflows
-COPY "Nagar_Setu_Chatbot_Chatflow.json" /root/.flowise/chatflows/Nagar_Setu_Chatbot_Chatflow.json
+COPY Nagar_Setu_Chatbot_Chatflow.json /root/.flowise/chatflows/Nagar_Setu_Chatbot_Chatflow.json
 
 # Make sure Ollama binary is executable and in PATH
 RUN chmod +x /usr/local/bin/ollama
